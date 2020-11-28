@@ -11,7 +11,7 @@ Character::Character(std::string const &_name)
 
 Character::Character(Character const &copy)
 :
-	_name(_name), 
+	_name(copy._name), 
     _count(0)
 {
 	for (int i = 0; i < copy._count; i++)

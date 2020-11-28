@@ -5,8 +5,6 @@
 # include <string>
 # include "AMateria.hpp"
 
-class Cure;
-
 class Cure : public AMateria
 {
     public:

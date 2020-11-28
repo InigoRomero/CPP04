@@ -1,10 +1,12 @@
 # include "Cure.hpp"
 
-Cure::Cure():
+Cure::Cure()
+:
 	AMateria("cure")
 {}
 
-Cure::Cure(Cure const &copy):
+Cure::Cure(Cure const &copy)
+:
 	AMateria("cure")
 {
 	this->_xp = copy._xp;
@@ -15,6 +17,8 @@ Cure &Cure::operator=(Cure const &op)
 	this->_xp = op._xp;
 	return (*this);
 }
+
+Cure::~Cure(){}
 
 AMateria *Cure::clone(void) const
 {

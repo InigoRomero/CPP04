@@ -1,10 +1,12 @@
 # include "Ice.hpp"
 
-Ice::Ice():
+Ice::Ice()
+:
 	AMateria("ice")
 {}
 
-Ice::Ice(Ice const &copy):
+Ice::Ice(Ice const &copy)
+:
 	AMateria("ice")
 {
 	this->_xp = copy._xp;
@@ -15,6 +17,8 @@ Ice &Ice::operator=(Ice const &op)
 	this->_xp = op._xp;
 	return (*this);
 }
+
+Ice::~Ice(){}
 
 AMateria *Ice::clone(void) const
 {
